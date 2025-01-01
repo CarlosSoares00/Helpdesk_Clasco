@@ -1,0 +1,128 @@
+{
+  "chamados": [
+    {
+      "id": "001",
+      "dataAbertura": "2024-09-22",
+      "horarioAbertura": "10:30",
+      "prioridade": "Alta",
+      "status": "Aberto",
+      "idSolicitante": 1,
+      "idProblema": 1,
+      "idAtendimento": 1,
+      "idEncerramento": 1
+    },
+    {
+      "id": "002",
+      "dataAbertura": "2024-09-21",
+      "horarioAbertura": "09:45",
+      "prioridade": "Média",
+      "status": "Em andamento",
+      "idSolicitante": 2,
+      "idProblema": 2,
+      "idAtendimento": 2,
+      "idEncerramento": null
+    }
+  ],
+  "solicitantes": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "cargo": "Analista",
+      "idDepartamento": 1,
+      "telefone": "+244 923 456 789"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "cargo": "Gerente",
+      "idDepartamento": 2,
+      "telefone": "+244 923 654 321"
+    }
+  ],
+  "problemas": [
+    {
+      "id": 1,
+      "tipoProblema": "Problema com impressora",
+      "descricaoProblema": "A impressora não está imprimindo documentos corretamente.",
+      "dataProblema": "2024-09-22",
+      "horaProblema": "10:15",
+      "idEquipamento": 1
+    },
+    {
+      "id": 2,
+      "tipoProblema": "Problema de rede",
+      "descricaoProblema": "A conexão à internet está instável.",
+      "dataProblema": "2024-09-21",
+      "horaProblema": "09:30",
+      "idEquipamento": 2
+    }
+  ],
+  "equipamentos": [
+    {
+      "id": 1,
+      "nomeEquipamento": "Impressora HP 1020",
+      "tipoEquipamento": "Impressora",
+      "numeroSerie": "HP1020-ABC123",
+      "localizacao": "Setor Financeiro"
+    },
+    {
+      "id": 2,
+      "nomeEquipamento": "Roteador Cisco",
+      "tipoEquipamento": "Roteador",
+      "numeroSerie": "CISCO-XYZ456",
+      "localizacao": "Setor de TI"
+    }
+  ],
+  "tecnicos": [
+    {
+      "id": 1,
+      "nome": "Carlos Mendes"
+    },
+    {
+      "id": 2,
+      "nome": "André Costa"
+    }
+  ],
+  "atendimentos": [
+    {
+      "id": 1,
+      "idTecnicoResponsavel": 1,
+      "dataAtendimento": "2024-09-22",
+      "horarioAtendimento": "11:00",
+      "solucaoAplicada": "Realizado ajuste no driver da impressora."
+    },
+    {
+      "id": 2,
+      "idTecnicoResponsavel": 2,
+      "dataAtendimento": "2024-09-21",
+      "horarioAtendimento": "10:00",
+      "solucaoAplicada": "Substituição do cabo de rede."
+    }
+  ],
+  "encerramentos": [
+    {
+      "id": 1,
+      "dataEncerramento": "2024-09-22",
+      "horarioEncerramento": "12:00",
+      "statusFinal": "Encerrado",
+      "idTecnicoEncerramento": 1
+    },
+    {
+      "id": null,
+      "dataEncerramento": null,
+      "horarioEncerramento": null,
+      "statusFinal": null,
+      "idTecnicoEncerramento": null
+    }
+  ],
+  "departamentos": [
+    {
+      "id": 1,
+      "nomeDepartamento": "Financeiro"
+    },
+    {
+      "id": 2,
+      "nomeDepartamento": "RH"
+    }
+  ]
+}

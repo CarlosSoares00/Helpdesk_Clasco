@@ -10,7 +10,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null); 
   const navigate = useNavigate()
-  const publicRoutes = ['/', '/register', '/admin/login', '/admin/register']; // Lista de rotas públicas (não exigem autenticação)
+  const publicRoutes = ['/','/register', '/admin/login', '/admin/register']; // Lista de rotas públicas (não exigem autenticação)
   
   
   useEffect(() => {

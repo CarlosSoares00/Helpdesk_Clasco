@@ -6,61 +6,143 @@ export const loginAdminContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #b2b8c2;
 `
-export const formContainer = styled.div`
+export const Container = styled.div`
   border-radius: 10px;
-  background-color: rgba(255,255,255, .10);
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
+  overflow: hidden;
+  background-color: rgba(255,255,255, .4);
+  
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  position: relative;
 `
-export const boxText = styled.div`
+export const illustration = styled.div`
+  width: 450px;
+  background-color: #2929ff;
   display: flex;
-  flex-direction: column;
-  span{
-    font-size: 14px;
+  flex-direction: column ;
+  gap: 10px;
+`
+export const headerI = styled.div`
+  text-align: center ;
+  display: grid;
+  gap: 10px;
+  
+`
+export const figure = styled.figure`
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: darkblue; */
+  img{
+    margin-top: 100px;
+    width: 400px;
+    height: 100%;
   }
 `
-export const title = styled.h2`
-  font-size: 32px;
-  color: #b3dff2;
+
+
+export const formLogin = styled.div`
+  height: 500px;
+  background-color: #f6fafd;
+  padding: 20px;
+  
+`
+export const headerF = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  h2{
+    color: #000;
+    font-size: 33px;
+  }
+  p{
+    font-size: 15px;
+  }
+  a{
+    color: #1d1dff;
+    text-decoration: underline;
+  }
+`
+export const logo = styled.figure`
+  width: 180px;
+  height: 40px;
+  margin-bottom: 20px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+`
+export const formSection = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-inline: 20px;
+  
 `
 export const form = styled.form`
   display: flex;
   flex-direction: column;
-  text-align: left;
-  gap: 15px;
+  gap: 10px;
 `
-export const input = styled.input`
-  width: 365px;
-  padding: 10px 15px;
-  border: 2px solid rgba(255, 255, 255, .7);
-  color: #fff;
-  font-size: 18px;
-  border-radius: 4px;
+export const inputContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
 
-  &:focus-visible{
-    border-color: rgba(255, 255, 255, .7);
+  label{
+    color: #718096;
   }
-  
-`
-export const buttonLink = styled.button`
-  font-size: 14px;
-  color: blue;
-  text-decoration: underline;
-`
-export const buttonLogin = styled.button`
-  padding: 10px 10px;
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 4px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-  transition: .4s ease;
+  input{
+    
+    padding: 10px 15px;
+    border: 2px solid #F7FAFC;
+    color: #fff;
+    border-radius: 12px;
+    background-color: #CBD5E0;
+    font-size: 16px;
+    color: #4A5568;
 
-  &:hover{
-    background-color: rgba(255, 255, 255, .40);
+    &:focus-visible{
+      border-color: rgba(255, 255, 255, .7);
+    }
   }
 `
+export const inputExtr = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 10px;
+`
+export const forgetP = styled.div`
+  a{
+    color: #1d1dff;
+    text-decoration: underline;
+  }
+`
+export const btnSubmit = styled.button`
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  /* background-color: lightblue; */
+  background-color: #1d1dff;
+
+`
+export const footer = styled.div`
+
+`
+
+
+
+
+
+
+

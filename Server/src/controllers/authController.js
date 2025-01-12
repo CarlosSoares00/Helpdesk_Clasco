@@ -8,7 +8,7 @@ const bcrypt = require('bcrypt')
 const Joi = require('joi')
 
 const JWT_SECRET = "CarlosSoares2004@"
-const JWT_EXPIRATION = '1h';
+const JWT_EXPIRATION = '24h';
 
 const validateUserInput = (data) => {
   const schema = Joi.object({

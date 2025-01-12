@@ -8,6 +8,7 @@ import Login from "./Containers/auth/pages/login/Login.jsx"
 import LoginAdmin from "./Containers/auth/pages/login/LoginAdmin.jsx"
 import RegisterAdmin from "./Containers/auth/pages/register/RegisterAdmin.jsx"
 
+
 // Container Client
 import LayoutClient from "./Containers/client/layout/LayoutClient.jsx"
 import Home from "./Containers/client/pages/home/Home.jsx"
@@ -55,11 +56,12 @@ const App = () => {
               
                 {/* Rotas Auth com layout */}
                 <Route element={<LayoutAuth/>}>
-                  <Route path='/' element={<Login/>}/>
+                  <Route path='/' element={<LoginAdmin/>}/>
+                  <Route path='/admin/register' element={<RegisterAdmin/>}/>
+                  
+                  <Route path='client/' element={<Login/>}/>
                   <Route path='/register' element={<Register/>}/>
 
-                  <Route path='/admin/login' element={<LoginAdmin/>}/>
-                  <Route path='/admin/register' element={<RegisterAdmin/>}/>
                 </Route>
                 
                 

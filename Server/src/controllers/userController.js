@@ -103,7 +103,6 @@ const userController = {
       return res.status(500).json({ error: 'Failed to fetch user' });
     }
   },
-  
   requestPasswordReset: async ( req, res) => {
     try {
       const { email } = req.body

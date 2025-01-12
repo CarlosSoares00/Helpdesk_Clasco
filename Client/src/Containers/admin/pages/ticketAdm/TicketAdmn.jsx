@@ -9,7 +9,7 @@ const TicketAdmn = () => {
   useEffect(() => {
     const fecthDepartments = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/get/departments')
+        const response = await axios.get('http://localhost:4000/admin/get/departments')
         // console.log(response.data)
         setDepartments(response.data)
   

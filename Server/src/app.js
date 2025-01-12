@@ -17,6 +17,7 @@ const departament = require('./routes/departamente.routes.js')
 const authController = require('./routes/auth.routes.js')
 const ticketController = require('./routes/ticket.routes.js');
 const userController = require('./routes/user.routes.js');
+const equipController = require('./routes/equip.routes.js')
 
 
 // Routas
@@ -24,7 +25,7 @@ app.use(departament)
 app.use(authController)
 app.use(userController)
 app.use(ticketController)
-
+app.use(equipController)
 
 
 

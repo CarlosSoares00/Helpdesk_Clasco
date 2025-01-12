@@ -8,6 +8,7 @@ const departmentSchema = Joi.object({
 });
 
 
+
 const departament = {
   createDp: async (req, res) => {
     try {
@@ -69,10 +70,3 @@ const departament = {
 }
 
 module.exports = departament
-
-
-/*
-  buscar todos os usuarios do departamento selecionado
-  buscar todos os equipamento do departamento
-  colocar equipamentos que pertecnem no departamento
-*/

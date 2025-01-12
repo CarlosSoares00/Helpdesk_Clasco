@@ -6,7 +6,7 @@ const VerifyToken = require("../middlewares/authMiddleware.js")
 
 
 router.post('/department', departamentController.createDp)
-router.get('/get/departments', departamentController.getsDp)
+router.get('/admin/get/departments', departamentController.getsDp)
 
 
 module.exports = router

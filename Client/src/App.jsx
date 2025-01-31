@@ -19,6 +19,7 @@ import Request from "./Containers/client/pages/request/Request.jsx"
 import Layout from "./Containers/admin/layout/Layout.jsx"
 import Tasks from "./Containers/admin/pages/tasks/Tasks.jsx"
 import BD from "./Containers/admin/pages/B.conhecimento/BD.jsx"
+import Users from "./Containers/admin/pages/users/Users.jsx"
 // import TicketID from "./Containers/admin/pages/tasks/subPages/viewTicket/ticketID.jsx"
 import Groups from "./Containers/admin/pages/group/Groups.jsx"
 import TicketAdmn from "./Containers/admin/pages/ticketAdm/TicketAdmn.jsx"
@@ -36,7 +37,7 @@ import Views from "./Containers/admin/pages/tasks/views/Views.jsx"
 import { AuthProvider } from "./context/AuthContext.jsx"
 import { DataProvider } from "./context/DataContext.jsx"  
 import TicketID from "./Containers/admin/pages/tasks/subPages/viewTicket/ticketID.jsx"
-import Pdf from "./Containers/admin/pages/pdf/Pdf.jsx"
+// import Pdf from "./Containers/admin/pages/pdf/Pdf.jsx"
 
 const storedToken = localStorage.getItem('token');
 if (storedToken) {
@@ -61,7 +62,6 @@ const App = () => {
                   
                   <Route path='client/' element={<Login/>}/>
                   <Route path='/register' element={<Register/>}/>
-
                 </Route>
                 
                 
@@ -88,6 +88,8 @@ const App = () => {
                     
                     <Route path='/admin/ticket/views' element={<TokenVerification> <TicketID/> </TokenVerification>} />
                     {/* <Route path='/admin/ticket/views' element={<TokenVerification> <Pdf/> </TokenVerification>} /> */}
+
+                    <Route path='/admin/users' element={<TokenVerification> <Users/> </TokenVerification>}/>
 
                   </Route>
                 

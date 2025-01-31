@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   label: {
-    fontWeight: "bold",
+    fontWeight: "900",
+    fontSize: "240px"
   },
   value: {
     marginLeft: 5,

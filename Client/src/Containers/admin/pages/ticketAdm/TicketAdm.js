@@ -89,10 +89,10 @@ export const label = styled.label`
   font-weight: 700;
 `
 export const select = styled.select`
-color: #fff;
+  color: #fff;
   display: flex;
   align-items: center;
-  padding: 8px 14px 8px 0px;
+  padding: 8px 14px 8px 10px;
   border: 1px solid #444;
   font-size: 16.5px;
   border-radius: 4px;
@@ -101,6 +101,7 @@ color: #fff;
   option{
     background-color: #333;
     color: #fff;
+    padding-left: 100px;
   }
 `
 export const textarea = styled.textarea`

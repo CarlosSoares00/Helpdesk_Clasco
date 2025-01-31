@@ -40,7 +40,7 @@ const Sidebar = () => {
         </S.icon>
 
         <S.icon>
-          <Link to="/admin/usuarios/">
+          <Link to="/admin/users">
             <i><FaUsers /></i>
             Usuarios
           </Link>

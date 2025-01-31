@@ -111,6 +111,7 @@ const TicketAdmn = () => {
             id="prioridade"
             onChange={(e) => setPriority(e.target.value)}
             >
+              <option value="">Selecione a prioridade</option>
               <option value="media">Media</option>
               <option value="baixa">Baixa</option>
               <option value="alta">Alta</option>

@@ -102,6 +102,7 @@ const ticketControllers = {
   try {
     const userId = req.user.userId; 
     const ticketId = req.params.idTicket; 
+    const currentDateTime = new Date();
     // Buscar o ticket pelo ID
     const ticket = await Ticket.findByPk(ticketId);
     if (!ticket) {
@@ -111,8 +112,8 @@ const ticketControllers = {
     await ticket.update({
       status: "Assumido",
       assignedTo: userId,
+      openedAt: currentDateTime,
     });
-
     // Responder ao cliente com o ticket atualizado
     return res.status(200).json({
       message: "Ticket assumido com sucesso.",
@@ -120,6 +121,7 @@ const ticketControllers = {
         id: ticket.id,
         status: ticket.status,
         assignedTo: ticket.assignedTo,
+        openedAt: ticket.openedAt
       },
     });
   } catch (error) {
@@ -142,11 +144,15 @@ const ticketControllers = {
       if (!ticket) {
         return res.status(404).json({ error: "Ticket não encontrado." });
       }
+
+      const currentDateTime = new Date();
+
       // Atualizar o ticket
       await ticket.update({
         status: "Terminado",
         tec_notes,
-        tec_description
+        tec_description,
+        closedAt: currentDateTime
       });
 
       return res.status(200).json({
@@ -155,7 +161,8 @@ const ticketControllers = {
           id: ticket.id,
           status: ticket.status,
           tec_notes: ticket.tec_notes,
-          tec_description: ticket.tec_description
+          tec_description: ticket.tec_description,
+          closedAt: ticket.closedAt,
         },
       });
 
@@ -166,8 +173,6 @@ const ticketControllers = {
       });
     }
   }
-
-
 }
 
 module.exports = ticketControllers
